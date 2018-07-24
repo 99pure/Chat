@@ -3,7 +3,7 @@ import pika, os, logging
 logging.basicConfig()
 
 # Parse CLODUAMQP_URL (fallback to localhost)
-url = os.environ.get('CLOUDAMQP_URL', 'amqp://guest:guest@localhost/%2f')
+url = os.environ.get('CLOUDAMQP_URL', 'amqp://gcfsyaps:t8h8sNP53s52YpDG_Kk10DtogEgeVMHG@lion.rmq.cloudamqp.com/gcfsyaps')
 params = pika.URLParameters(url)
 params.socket_timeout = 5
 
